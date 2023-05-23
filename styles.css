@@ -1,0 +1,133 @@
+/*3  divisons under container :- main flx-cont cont*/
+.container {
+  display: flex;
+} 
+/* main used for timeline  */
+.main
+{
+  width: 10%;
+}
+/* used to display the chapter names */
+.flx-cont
+{ 
+    text-align: center;
+    margin: 10px;
+    width: 400px;
+   
+
+}
+/* cont used for dymanically displaying the data  */
+.cont
+  {
+    border: solid black 1px;
+    border-color: blue;
+    border-radius: 25px;
+    height:280px ;
+    padding: 10px;
+    background-color: #E3F4F4;
+  }
+.flx-itm
+{  
+    display: flex;
+    align-items: center;
+    padding : 10px 10px 0px 10px;
+    border: solid black 1px;
+    border-color: blue;
+    border-radius: 25px;
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+    cursor: grab;
+}
+.flx-itm:hover
+{
+  background-color: #764AF1;
+}
+.flx-itm img {
+  margin-left: auto;
+}
+.content/*Div*/
+{
+  margin: 10px;
+  width: 300px;
+}
+  /*Header*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  /*Header*/
+  /* transitions for the syllabus showing   */
+  .transi
+  {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* Time Line */
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
+ .circle {
+  width: 20px;
+    height: 20px;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s ease;
+ }
+ 
+ .circle-black {
+  background-color: blue;
+ }
+ 
+ .vline {
+  color: blue;
+  border-left: 3px solid;
+  height: 50px;
+ }
+ .circle-blue{
+  width: 30px;
+    height: 30px;
+    border-width: 4px;
+    background-color: blue;
+  }
