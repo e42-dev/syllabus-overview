@@ -1,3 +1,12 @@
+body{
+  background-color: #FFFFFF;
+}
+h4,b{color: #2F80ED;}
+h1{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
 /*3  divisons under container :- main flx-cont cont*/
 .container {
   display: flex;
@@ -13,18 +22,17 @@
     text-align: center;
     margin: 10px;
     width: 400px;
-   
-
 }
 /* cont used for dymanically displaying the data  */
 .cont
   {
+    margin: 15px;
     border: solid black 1px;
     border-color: blue;
     border-radius: 25px;
     height:280px ;
     padding: 10px;
-    background-color: #E3F4F4;
+    box-shadow: 0 0 10px #9ecaed;
   }
 .flx-itm
 {  
@@ -39,51 +47,22 @@
     text-align: center;
     margin: 10px;
     cursor: grab;
+    background-color: #FAFAFA;
 }
 .flx-itm:hover
-{
-  background-color: #764AF1;
+{  
+  box-shadow: 0 0 10px #9ecaed;
+  
 }
 .flx-itm img {
   margin-left: auto;
 }
 .content/*Div*/
 {
-  margin: 10px;
+  margin: 15px;
   width: 300px;
+  font-weight: bold;
 }
-  /*Header*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
-  /*Header*/
   /* transitions for the syllabus showing   */
   .transi
   {
@@ -110,18 +89,18 @@ ul {
  .circle {
   width: 20px;
     height: 20px;
-    border: 2px solid darkblue;
+    border: 2px solid  #2F80ED;
     border-radius: 50%;
     background-color: white;
     transition: all 0.5s ease;
  }
  
  .circle-black {
-  background-color: blue;
+  background-color:  #2F80ED;
  }
  
  .vline {
-  color: blue;
+  color:  #2F80ED;
   border-left: 3px solid;
   height: 50px;
  }
@@ -129,5 +108,14 @@ ul {
   width: 30px;
     height: 30px;
     border-width: 4px;
-    background-color: blue;
+    background-color:  #2F80ED;
   }
+  .concentric{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color: #2F80ED;
+    background-clip:content-box;
+    padding:4px;
+    border:3px solid #2F80ED;
+}
